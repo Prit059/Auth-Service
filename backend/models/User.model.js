@@ -107,9 +107,6 @@ UserSchema.pre('save', async function(next) {
   }
 })
 
-// compare password method
-UserSchema.methods.
-
 const User = mongoose.model('User', UserSchema);
 
 module.exports = User;
