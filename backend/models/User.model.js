@@ -94,6 +94,11 @@ UserSchema.index({ githubId: 1});
 UserSchema.index({ verificationToken: 1 });
 UserSchema.index({ passwordResetToken: 1 });
 
+UserSchema.methods.comparePassword = async function(password){
+  if(!this.password) return false;
+  return await bcrypt.compare(password, this.password);
+}
+
 UserSchema.pre('save', async function(next) {
   if(!this.isModified('password')) return next();
 
@@ -106,6 +111,7 @@ UserSchema.pre('save', async function(next) {
     next(error);
   }
 })
+
 
 const User = mongoose.model('User', UserSchema);
 
