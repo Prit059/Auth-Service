@@ -53,3 +53,9 @@ const validateLogin = (data) => {
     throw error;
   }
 }
+
+
+module.exports = {
+  validateRegister,
+  validateLogin
+}

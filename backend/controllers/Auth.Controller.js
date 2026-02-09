@@ -3,10 +3,9 @@ const AuthService = require('../services/Auth.Service');
 const validators = require('../utils/validators');
 const register = async (req, res) => {
   try {
+    console.log("Received data:", req.body);
     const error = validators.validateRegister(req.body);
-    if (error.length > 0) {
-      return res.status(400).json({ error: error });
-    }
+    // ifc
 
     const user = await AuthService.registerService(req.body);
 

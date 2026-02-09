@@ -12,6 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // Define routes
+app.use("/auth",AuthRoute);
 
 
 
