@@ -1,8 +1,9 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/User.model');
 
-const protect = async (req,res) => {
+const protect = async (req,res,next) => {
   try {
+    
     const authHeader = req.headers.authorization;
     if(!authHeader || !authHeader.startsWith('Bearer ')){
       return res.status(401).json({
@@ -36,7 +37,15 @@ const protect = async (req,res) => {
         })
       }
 
+      if(!user.isActive){
+        return  res.status(403).json({
+          success: false,
+          message: "User account is deactivated."
+        });
+      }
+
       req.user = user;
+      next();
     } catch (error) {
       if (jwtError.name === 'TokenExpiredError') {
         return res.status(401).json({ 
