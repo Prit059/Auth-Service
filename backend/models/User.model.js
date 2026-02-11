@@ -28,11 +28,13 @@ const UserSchema = new mongoose.Schema({
   googleId: {
     type: String,
     sparse: true, // allow multiple null values
+    unique: true,
     default: null,
   },
   githubId: {
     type: String,
     sparse: true, // allow multiple null values
+    unique: true,
     default: null,
   },
 
@@ -54,6 +56,7 @@ const UserSchema = new mongoose.Schema({
   },
   avatar: {
     type: String,
+    default: null,
   },
 
   lastlogin: {
@@ -89,8 +92,8 @@ const UserSchema = new mongoose.Schema({
 );
 
 // UserSchema.index({ email: 1 });
-// UserSchema.index({ googleId: 1 });
-// UserSchema.index({ githubId: 1});
+UserSchema.index({ googleId: 1 });
+UserSchema.index({ githubId: 1});
 UserSchema.index({ verificationToken: 1 });
 UserSchema.index({ passwordResetToken: 1 });
 

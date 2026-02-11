@@ -61,15 +61,15 @@ const loginService = async (userdata) => {
       throw new Error('User not found.');
     }
 
-    if(!finduser.emailverified){
-      console.log('Email not verified.');
-      throw new Error('Email not verified.');
-    }
-
     const isMatch = await finduser.comparePassword(userdata.password);
     if(!isMatch){
       console.log('Invalid password.');
       throw new Error('Invalid password.');
+    }
+
+    if(!finduser.emailverified){
+      console.log('Email not verified.');
+      throw new Error('Email not verified.');
     }
 
     return {
