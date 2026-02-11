@@ -109,10 +109,25 @@ const resetpassword = async (req, res) => {
   }
 }
 
+const getprofile = async (req, res) => {
+  try {
+    const result = await AuthService.getprofile({ id: req.user.id });
+
+    if(!result){
+      return res.status(400).json({ error: 'User not found.' });
+    }
+
+    res.json(result);
+  } catch (error) {
+    return res.status(500).json({ error: "Server Error."});
+  }
+}
+
 module.exports = {
   register,
   login,
   verifyEmail,
   forgotpassword,
-  resetpassword
+  resetpassword,
+  getprofile
 }

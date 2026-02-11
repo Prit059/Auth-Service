@@ -10,7 +10,6 @@ const axiosInstance = axios.create({
   },
 });
 
-
 // Request Intercepter
 axiosInstance.interceptors.request.use(
   (config) => {
@@ -24,7 +23,7 @@ axiosInstance.interceptors.request.use(
     console.error("Request error:", error);
     return Promise.reject(error);
   }
-)
+);
 
 // Response Interceptor
 axiosInstance.interceptors.response.use(

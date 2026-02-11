@@ -152,10 +152,22 @@ const resetpassword = async (token, newpassword) => {
   }
 }
 
+const getprofile = async (userid) => {
+  try {
+    const user = await User.findById(userid).select("-password");
+
+    
+    return user;
+  } catch (error) {
+    
+  }
+}
+
 module.exports = {
   registerService,
   loginService,
   verifyEmail,
   forgotpassword,
-  resetpassword
+  resetpassword,
+  getprofile
 }
