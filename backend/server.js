@@ -25,7 +25,7 @@ app.use(session({
     secure: process.env.NODE_ENV,
     httpOnly: true,
     sameSite: 'lax',
-    maxAge: 24* 60 * 60 * 1000 // 24 hours
+    maxAge: 24 * 60 * 60 * 1000 // 24 hours
   }
 }));
 
