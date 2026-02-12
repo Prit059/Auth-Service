@@ -156,7 +156,6 @@ const getprofile = async (userid) => {
   try {
     const user = await User.findById(userid).select("-password");
 
-    
     return user;
   } catch (error) {
     
