@@ -8,7 +8,8 @@ export default function Register() {
     firstname: '',
     lastname: '',
     email: '',
-    password: ''
+    password: '',
+    role: 'user'
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -96,6 +97,17 @@ export default function Register() {
               style={inputStyle}
             />
             <p style={{ color: '#666', fontSize: '12px', marginTop: '4px' }}>At least 6 characters</p>
+          </div>
+
+          <div style={{ marginBottom: '20px' }}>
+            <label style={{ color: '#ccc', fontSize: '14px', marginBottom: '8px', display: 'block' }}>Role</label>
+            <input
+              type="role"
+              value={form.role}
+              onChange={(e) => setForm({...form, role: e.target.value})}
+              required
+              style={inputStyle}
+            />
           </div>
 
           <button

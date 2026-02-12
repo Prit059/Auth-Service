@@ -25,9 +25,8 @@ function App() {
             <Route path="/reset-password/:token" element={<ResetPassword />} />
             <Route path="/verify-email/:token" element={<VerifyEmail />} />
             <Route path="/dashboard" element={
-              <ProtectedRoute>
+              
                 <Dashboard />
-              </ProtectedRoute>
             } />
             <Route path="/" element={<Navigate to="/dashboard" />} />
           </Routes>
