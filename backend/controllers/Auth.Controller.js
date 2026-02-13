@@ -111,13 +111,13 @@ const resetpassword = async (req, res) => {
 
 const getprofile = async (req, res) => {
   try {
-    const result = await AuthService.getprofile({ id: req.user.id });
+    const user = await AuthService.getprofile(req.user.id);
 
-    if(!result){
-      return res.status(400).json({ error: 'User not found.' });
+    if(!user){
+      return res.status(404).json({ error: 'User not found.' });
     }
 
-    res.json(result);
+    res.json(user);
   } catch (error) {
     return res.status(500).json({ error: "Server Error."});
   }

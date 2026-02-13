@@ -21,7 +21,7 @@ const UserProvider = ({ children }) => {
       // console.log("Checking auth with token:", token.substring(0, 20) + "...");
       
       const response = await axiosInstance.get(API_PATHS.AUTH.GET_PROFILE);
-      // console.log("Auth response:", response.data);
+      console.log("Auth response:", response.data);
       
       setUser(response.data);
       setError(null);
@@ -44,12 +44,15 @@ const UserProvider = ({ children }) => {
     checkAuth();
   }, []);
 
-  const login = (userData, token) => {
-    localStorage.setItem("token", token);
-    axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-    setUser(userData);
-    setError(null);
-  };
+const login = (userData, token) => {
+  localStorage.setItem("token", token);
+  axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+  
+  // ✅ Make sure userData has the correct structure
+  console.log('Setting user:', userData);
+  setUser(userData); // Should be the user object directly
+  setError(null);
+};
 
   const clearUser = () => {
     setUser(null);

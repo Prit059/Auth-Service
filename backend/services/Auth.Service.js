@@ -152,13 +152,24 @@ const resetpassword = async (token, newpassword) => {
   }
 }
 
-const getprofile = async (userid) => {
+const getprofile = async (userData) => {
   try {
+    const userid = userData.id || userData; 
+    // console.log("User-ID : ",userid);
+    if (!userid) {
+      throw new Error('User ID is required');
+    }
+    
     const user = await User.findById(userid).select("-password");
+
+    if (!user) {
+      throw new Error('User not found');
+    }
 
     return user;
   } catch (error) {
-    
+    console.error('Get profile error:', error.message);
+    throw error;
   }
 }
 

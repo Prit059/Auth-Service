@@ -91,9 +91,7 @@ const UserSchema = new mongoose.Schema({
 { timestamps: true }
 );
 
-// UserSchema.index({ email: 1 });
-UserSchema.index({ googleId: 1 });
-UserSchema.index({ githubId: 1});
+
 UserSchema.index({ verificationToken: 1 });
 UserSchema.index({ passwordResetToken: 1 });
 

@@ -1,10 +1,10 @@
 export default function OAuthButtons() {
   const handleGoogle = () => {
-    window.location.href = 'http://localhost:8000/auth/google';
+    window.location.href = 'http://localhost:8000/oauth/google';
   };
 
   const handleGithub = () => {
-    window.location.href = 'http://localhost:8000/auth/github';
+    window.location.href = 'http://localhost:8000/oauth/github';
   };
 
   const buttonStyle = {

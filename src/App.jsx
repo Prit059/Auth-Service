@@ -7,6 +7,7 @@ import ForgotPassword from './Page/ForgotPassword';
 import Dashboard from "./Page/Dashboard";
 import ProtectedRoute from './components/ProtectedRoute';
 import VerifyEmail from "./Page/VerifyEmail";
+import OAuthSuccess from "./Page/OAuthSuccess"
 function App() {
 
   return (
@@ -24,9 +25,11 @@ function App() {
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password/:token" element={<ResetPassword />} />
             <Route path="/verify-email/:token" element={<VerifyEmail />} />
+            <Route path="/oauth-success" element={<OAuthSuccess />} />
             <Route path="/dashboard" element={
-              
+              <ProtectedRoute>
                 <Dashboard />
+              </ProtectedRoute>
             } />
             <Route path="/" element={<Navigate to="/dashboard" />} />
           </Routes>

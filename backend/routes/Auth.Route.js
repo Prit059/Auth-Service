@@ -10,6 +10,6 @@ router.post('/login',rateLimitMiddleware,login);
 router.get('/verify-email/:token',verifyEmail);
 router.post('/forgot-password',rateLimitMiddleware,forgotpassword);
 router.post('/reset-password/:token',resetpassword);
-router.post('/profile',protect,getprofile);
+router.get('/profile',protect,getprofile);
 
 module.exports = router;
