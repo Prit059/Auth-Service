@@ -134,36 +134,36 @@ cp .env.example .env
   <br/>
 
   ## Step 3: Create Project
-  <u>
+  <hr>
   <br/>
 
   1. Create New Project<br/>
   <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M1.png" alt="" width="800"/></td><br/>
-  <u>
+  <hr>
   2. Name: "Auth Service Project" And Add members (skip) And click Next<br/>
   <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M2.png" alt=""/></td> <br/>
-  <u>
+  <hr>
   3. Create a cluster (Click Create)<br/>
   <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M3.png" alt=""/></td> <br/>
-  <u>
+  <hr>
   4. Choose Free(If You Have Money so choose paid) And Enter Name of Cluster , Choose Provider, Choose Region, And (Optional) Choose Tag<br/>
   <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M4.png" alt=""/></td> <br/>
-  <u>
+  <hr>
   5. After Create wait some time and see this screen like And Click Create Database User. After Choose a Connection method click.<br/>
   <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M5.png" alt=""/></td> <br/>
-  <u>
+  <hr>
   6. Choose Drivers.<br/>
   <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M6.png" alt=""/></td> <br/>
-  <u>
+  <hr>
   7. Select Driver (for this time choose Nodejs you choose by own) Then if install mongodb but you install already. no need to install this.(For only this project.) Then final copy connection String then Done.<br/>
   <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M7.png" alt=""/></td> <br/>
-  <u>
+  <hr>
   8. Open MongoDB compass Click Add new connection<br/>
   <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M8.png" alt=""/></td> <br/>
-  <u>
+  <hr>
   9. New Connection in add you connection string(Step-8). and save & connect.<br/>
   <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M9.png" alt=""/></td> <br/>
-  <u>
+  <hr>
 
   <br/>
   Database with connection ready.
@@ -173,35 +173,35 @@ cp .env.example .env
 
 <details> <summary><strong>📹 Click here for Google OAuth setup (30 seconds)</strong></summary>
 <br/>
-<u>
+<hr>
 
 1. Go to Google Cloud Console(https://console.cloud.google.com/) (Login by your google Account.)<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G1.png" alt="" width="800"/></td><br/>
-<u>
+<hr>
 
 2. After This Page Open . Click APIs & Services<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G2.png" alt="" width="800"/></td><br/>
-<u>
+<hr>
 
 3. Left Side Click OAuth consent screen<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G3.png" alt="" width="800"/></td><br/>
-<u>
+<hr>
 
 4. Then Again Left Side Click Clients After " + Create client " click <br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G4.png" alt="" width="800"/></td><br/>
-<u>
+<hr>
 
 5. Choose Application Type(Web application) , Write Name of Your Auth<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G5.png" alt="" width="800"/></td><br/>
-<u>
+<hr>
 
 6. Authorized JavaScript origins : Click Add URI and Write "http://localhost:8000<br/>Authorized redirect URI : Click Add URI and write http://localhost:8000/oauth/google/callback Then Create.<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G6.png" alt="" width="800"/></td><br/>
-<u>
+<hr>
 
 7. Copy Client-ID, copy Client-Secret Paste in .env file.<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G7.png" alt="" width="800"/></td><br/>
-<u>
+<hr>
 
 Done. Told you it's fast.
 
@@ -210,31 +210,31 @@ Done. Told you it's fast.
 <details> <summary><strong>📹 Click here for GitHub OAuth setup (20 seconds)</strong></summary>
 <br/>
 <br/>
-<u>
+<hr>
 
 1. Go to GitHub → (Profile Top-Right click)Settings → Developer Settings → OAuth Apps<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH1.png" alt="" width="400"/></td>
-<u>
+<hr>
 
 2. Click "New OAuth App"<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH2.png" alt="" width="800"/></td>
-<u>
+<hr>
 
 3. App Name: "Enter Your App Name"<br/>Homepage: http://localhost:8000<br/>Homepage: http://localhost:8000<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH3.png" alt="" width="800"/></td>
-<u>
+<hr>
 
 4. Copy Client-ID → Paste in .env <br/>Click "Generate Client Secret"
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH4.png" alt="" width="800"/></td>
-<u>
+<hr>
 
 5. verify via email
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH5.png" alt="" width="800"/></td>
-<u>
+<hr>
 
 6. Copy Client Secret → Paste in .env<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH6.png" alt="" width="800"/></td>
-<u>
+<hr>
 
 That's it. GitHub is literally 4 clicks.
 <br/>
