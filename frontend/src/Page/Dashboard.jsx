@@ -32,13 +32,13 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div className="min-h-screen bg-black">
       {/* Header */}
       <nav className="border-b border-gray-700 bg-gray-900/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">🔐</span>
               </div>
               <span className="text-white font-semibold text-lg">AuthService</span>
@@ -46,7 +46,7 @@ export default function Dashboard() {
             
             <button
               onClick={handleLogout}
-              className="inline-flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
+              className="inline-flex items-center px-4 py-2 bg-red-600/20 border border-red-600 hover:bg-red-700/50 text-white text-sm font-medium rounded-lg transition-colors duration-200"
             >
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
@@ -60,7 +60,7 @@ export default function Dashboard() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Welcome Banner */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 mb-8 shadow-xl">
+        <div className="bg-gray-700/20 border border-gray-600 rounded-2xl p-8 mb-8 shadow-xl">
           <h1 className="text-3xl font-bold text-white mb-2">
             Welcome back, {profile?.name?.split(' ')[0] || 'User'}! 👋
           </h1>
@@ -72,9 +72,9 @@ export default function Dashboard() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left Column - Profile Card */}
           <div className="lg:col-span-1">
-            <div className="bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden shadow-xl sticky top-24">
+            <div className="bg-gray-700/20 rounded-2xl border border-gray-700 overflow-hidden shadow-xl sticky top-24">
               {/* Profile Header */}
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-8 text-center">
+              <div className="px-6 py-8 text-center">
                 {profile?.avatar ? (
                   <img 
                     src={profile.avatar} 
@@ -149,7 +149,7 @@ export default function Dashboard() {
           {/* Right Column - Setup Instructions */}
           <div className="lg:col-span-2 space-y-6">
             {/* SECTION 1: QUICK START */}
-            <div className="bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden shadow-xl">
+            <div className="bg-gray-700/20 rounded-2xl border border-gray-700 overflow-hidden shadow-xl">
               <div className="border-b border-gray-700 p-6">
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center">
@@ -271,7 +271,7 @@ export default function Dashboard() {
             </div>
 
             {/* SECTION 2: API DOCUMENTATION */}
-            <div className="bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden shadow-xl">
+            <div className="bg-gray-700/20 rounded-2xl border border-gray-700 overflow-hidden shadow-xl">
               <div className="border-b border-gray-700 p-6">
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center">
@@ -289,9 +289,9 @@ export default function Dashboard() {
                     { method: 'GET', path: '/auth/verify-email/:token', desc: 'Verify email' },
                     { method: 'POST', path: '/auth/forgot-password', desc: 'Request password reset' },
                     { method: 'POST', path: '/auth/reset-password/:token', desc: 'Reset password' },
-                    { method: 'GET', path: '/auth/google', desc: 'Google OAuth login' },
-                    { method: 'GET', path: '/auth/github', desc: 'GitHub OAuth login' },
                     { method: 'GET', path: '/auth/profile', desc: 'Get user profile' },
+                    { method: 'GET', path: '/oauth/google', desc: 'Google OAuth login' },
+                    { method: 'GET', path: '/oauth/github', desc: 'GitHub OAuth login' },
                   ].map((api, idx) => (
                     <div key={idx} className="flex items-center space-x-3 p-3 bg-gray-700/30 rounded-lg hover:bg-gray-700/50 transition-colors">
                       <span className={`px-2 py-1 rounded text-xs font-mono font-bold ${
@@ -308,7 +308,7 @@ export default function Dashboard() {
             </div>
 
             {/* SECTION 3: ENVIRONMENT VARIABLES */}
-            <div className="bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden shadow-xl">
+            <div className="bg-gray-700/20 rounded-2xl border border-gray-700 overflow-hidden shadow-xl">
               <div className="border-b border-gray-700 p-6">
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-yellow-500/20 rounded-lg flex items-center justify-center">
@@ -353,7 +353,7 @@ CLIENT_URL=http://localhost:5173`}
                   </p>
                   <div className="flex space-x-4">
                     <a 
-                      href="https://github.com/yourusername/auth-service" 
+                      href="https://github.com/Prit059/auth-service" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="inline-flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
@@ -375,8 +375,8 @@ CLIENT_URL=http://localhost:5173`}
             </div>
 
             {/* IMAGE PLACEHOLDERS - Add your screenshots here */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-              {/* SCREENSHOT 1 - Registration Page */}
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+
               <div className="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
                 <div className="h-40 bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">[Screenshot: Registration Page]</span>
@@ -386,7 +386,7 @@ CLIENT_URL=http://localhost:5173`}
                 </div>
               </div>
 
-              {/* SCREENSHOT 2 - Login Page */}
+
               <div className="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
                 <div className="h-40 bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">[Screenshot: Login Page]</span>
@@ -396,7 +396,7 @@ CLIENT_URL=http://localhost:5173`}
                 </div>
               </div>
 
-              {/* SCREENSHOT 3 - OAuth Success */}
+
               <div className="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
                 <div className="h-40 bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">[Screenshot: OAuth Success]</span>
@@ -406,7 +406,7 @@ CLIENT_URL=http://localhost:5173`}
                 </div>
               </div>
 
-              {/* SCREENSHOT 4 - Dashboard */}
+
               <div className="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
                 <div className="h-40 bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">[Screenshot: Dashboard]</span>
@@ -415,7 +415,7 @@ CLIENT_URL=http://localhost:5173`}
                   <p className="text-xs text-gray-400">Add your dashboard screenshot here</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>
