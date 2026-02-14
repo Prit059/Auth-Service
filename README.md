@@ -278,14 +278,13 @@ That's it. GitHub is literally 4 clicks.
 
 ## Generate JWT_SECRET AND SESSION_SECRET 
 
-<hr>
 <br/>
 🔴 (Note: Not same Output Paste in both Generate 2 and Paste.)
 
 ```
 node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ```
-
+<hr>
 
 ## Step 3: Install & Run
 ```
