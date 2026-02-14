@@ -109,10 +109,20 @@ cp .env.example .env
 ⚫ GitHub OAuth Keys (even faster than Google)
 
 <details> <summary><strong>📹 Click here for MongoDB URI (30 seconds)</strong></summary>
+<br/>
+<hr>
+<br/>
+
 ## Step 1: Download Compass
   1. Go to MongoDB Compass Download (https://www.mongodb.com/products/tools/compass)
   2. Download the version for your OS (Windows/Mac/Linux)
   3. Install like any normal application 
+  
+<br/>
+<hr>
+<br/>
+
+🔴 If already account And then direct Jump Part-2 - Step-3 
 
 ## ☁️ Part 2: Create MongoDB Atlas Account & Cluster
   <br/>
