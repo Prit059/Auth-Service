@@ -135,7 +135,7 @@ cp .env.example .env
 
   ## Step 3: Create Project
   1. Create New Project<br/>
-  <td><img src="/images/M1.png" alt=""/></td><br/>
+  <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/public/images/M1.png" alt="" width="800"/></td><br/>
   3. Name: "Auth Service Project" And Add members (skip) And click Next<br/>
   <td><img src="/images/M2.png" alt=""/></td> <br/>
   4. Create a cluster (Click Create)<br/>
