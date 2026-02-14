@@ -241,6 +241,42 @@ That's it. GitHub is literally 4 clicks.
 <br/>
 </details>
 
+<details> <summary><strong>📹 Click here for EMAIL_USER and EMAIL_PASS setup (20 seconds)</strong></summary>
+<br/>
+<hr>
+<br/>
+
+1. Open browser and go to Manage your Google Account.
+```
+1. Click "Security" in left sidebar
+2. Scroll down to "How you sign in to Google"
+3. Look for "2-Step Verification"
+4. Turn On 2-Step Verification (If Off) - Must
+``` 
+<br/>
+<hr>
+<br/>
+<br/>
+
+2. Search Bar in Search "App" then you see App Passwords click
+
+3. Enter Your Account Password.
+
+4. Enter Your App name And Create.
+
+5. Copy EMAIL_PASS and Paste in .env file. (and your EMAIL_USER Is Your Account email use in this process.)
+</details>
+
+## Generate JWT_SECRET AND SESSION_SECRET 
+<br/>
+<hr>
+<br/>
+🔴 (Note: Not same Output Paste in both Generate 2 and Paste.)
+
+```
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+```
+
 
 ## Step 3: Install & Run
 ```
