@@ -160,6 +160,7 @@ cp .env.example .env
 </details>
 
 <details> <summary><strong>📹 Click here for Google OAuth setup (30 seconds)</strong></summary>
+<br/>
 
 1. Go to Google Cloud Console(https://console.cloud.google.com/) (Login by your google Account.)<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G1.png" alt="" width="800"/></td><br/>
@@ -187,24 +188,33 @@ Done. Told you it's fast.
 </details>
 
 <details> <summary><strong>📹 Click here for GitHub OAuth setup (20 seconds)</strong></summary>
+<br/>
+<br/>
+<ul>
 
 1. Go to GitHub → (Profile Top-Right click)Settings → Developer Settings → OAuth Apps<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH1.png" alt="" width="400"/></td>
+<ul>
 
 2. Click "New OAuth App"<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH2.png" alt="" width="800"/></td>
+<ul>
 
 3. App Name: "Enter Your App Name"<br/>Homepage: http://localhost:8000<br/>Homepage: http://localhost:8000<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH3.png" alt="" width="800"/></td>
+<ul>
 
 4. Copy Client-ID → Paste in .env <br/>Click "Generate Client Secret"
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH4.png" alt="" width="800"/></td>
+<ul>
 
-6. verify via email
+5. verify via email
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH5.png" alt="" width="800"/></td>
+<ul>
 
-7. Copy Client Secret → Paste in .env<br/>
+6. Copy Client Secret → Paste in .env<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH6.png" alt="" width="800"/></td>
+<ul>
 
 That's it. GitHub is literally 4 clicks.
 <br/>
