@@ -136,22 +136,22 @@ cp .env.example .env
   ## Step 3: Create Project
   1. Create New Project<br/>
   <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M1.png" alt="" width="800"/></td><br/>
-  3. Name: "Auth Service Project" And Add members (skip) And click Next<br/>
-  <td><img src="/images/M2.png" alt=""/></td> <br/>
-  4. Create a cluster (Click Create)<br/>
-  <td><img src="/images/M3.png" alt=""/></td> <br/>
-  5. Choose Free(If You Have Money so choose paid) And Enter Name of Cluster , Choose Provider, Choose Region, And (Optional) Choose Tag<br/>
-  <td><img src="/images/M4.png" alt=""/></td> <br/>
-  6. After Create wait some time and see this screen like And Click Create Database User. After Choose a Connection method click.<br/>
-  <td><img src="/images/M5.png" alt=""/></td> <br/>
-  7. Choose Drivers.<br/>
-  <td><img src="/images/M6.png" alt=""/></td> <br/>
-  8. Select Driver (for this time choose Nodejs you choose by own) Then if install mongodb but you install already. no need to install this.(For only this project.) Then final copy connection String then Done.<br/>
-  <td><img src="/images/M7.png" alt=""/></td> <br/>
-  9. Open MongoDB compass Click Add new connection<br/>
-  <td><img src="/images/M8.png" alt=""/></td> <br/>
-  10. New Connection in add you connection string(Step-8). and save & connect.<br/>
-  <td><img src="/images/M9.png" alt=""/></td> <br/>
+  2. Name: "Auth Service Project" And Add members (skip) And click Next<br/>
+  <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M2.png" alt=""/></td> <br/>
+  3. Create a cluster (Click Create)<br/>
+  <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M3.png" alt=""/></td> <br/>
+  4. Choose Free(If You Have Money so choose paid) And Enter Name of Cluster , Choose Provider, Choose Region, And (Optional) Choose Tag<br/>
+  <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M4.png" alt=""/></td> <br/>
+  5. After Create wait some time and see this screen like And Click Create Database User. After Choose a Connection method click.<br/>
+  <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M5.png" alt=""/></td> <br/>
+  6. Choose Drivers.<br/>
+  <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M6.png" alt=""/></td> <br/>
+  7. Select Driver (for this time choose Nodejs you choose by own) Then if install mongodb but you install already. no need to install this.(For only this project.) Then final copy connection String then Done.<br/>
+  <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M7.png" alt=""/></td> <br/>
+  8. Open MongoDB compass Click Add new connection<br/>
+  <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M8.png" alt=""/></td> <br/>
+  9. New Connection in add you connection string(Step-8). and save & connect.<br/>
+  <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/M9.png" alt=""/></td> <br/>
 
   <br/>
   Database with connection ready.
