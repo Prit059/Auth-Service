@@ -109,7 +109,7 @@ cp .env.example .env
 ⚫ GitHub OAuth Keys (even faster than Google)
 
 <details> <summary><strong>📹 Click here for MongoDB URI (30 seconds)</strong></summary>
-<br/>
+
 <hr>
 <br/>
 
@@ -117,7 +117,7 @@ cp .env.example .env
   1. Go to MongoDB Compass Download (https://www.mongodb.com/products/tools/compass)
   2. Download the version for your OS (Windows/Mac/Linux)
   3. Install like any normal application 
-  
+
 <br/>
 <hr>
 <br/>
@@ -186,18 +186,19 @@ cp .env.example .env
 <hr>
 
 1. Go to Google Cloud Console(https://console.cloud.google.com/) (Login by your google Account.)<br/>
+After This Page Open . Click APIs & Services<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G1.png" alt="" width="800"/></td><br/>
 <hr>
 
-2. After This Page Open . Click APIs & Services<br/>
+2. Left Side Click OAuth consent screen<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G2.png" alt="" width="800"/></td><br/>
 <hr>
 
-3. Left Side Click OAuth consent screen<br/>
+3. Click Clients.
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G3.png" alt="" width="800"/></td><br/>
 <hr>
 
-4. Then Again Left Side Click Clients After " + Create client " click <br/>
+4. After " + Create client " click <br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G4.png" alt="" width="800"/></td><br/>
 <hr>
 
@@ -218,7 +219,7 @@ Done. Told you it's fast.
 </details>
 
 <details> <summary><strong>📹 Click here for GitHub OAuth setup (20 seconds)</strong></summary>
-<br/>
+
 <br/>
 <hr>
 
@@ -252,7 +253,7 @@ That's it. GitHub is literally 4 clicks.
 </details>
 
 <details> <summary><strong>📹 Click here for EMAIL_USER and EMAIL_PASS setup (20 seconds)</strong></summary>
-<br/>
+
 <hr>
 <br/>
 
@@ -263,9 +264,7 @@ That's it. GitHub is literally 4 clicks.
 3. Look for "2-Step Verification"
 4. Turn On 2-Step Verification (If Off) - Must
 ``` 
-<br/>
 <hr>
-<br/>
 <br/>
 
 2. Search Bar in Search "App" then you see App Passwords click
@@ -278,7 +277,7 @@ That's it. GitHub is literally 4 clicks.
 </details>
 
 ## Generate JWT_SECRET AND SESSION_SECRET 
-<br/>
+
 <hr>
 <br/>
 🔴 (Note: Not same Output Paste in both Generate 2 and Paste.)
