@@ -160,27 +160,51 @@ cp .env.example .env
 </details>
 
 <details> <summary><strong>📹 Click here for Google OAuth setup (30 seconds)</strong></summary>
-1. Go to Google Cloud Console<br/>
-2. Create new project → "Auth Service"<br/>
-3. Search "OAuth" → Click "OAuth consent screen"<br/>
-4. Choose "External" → Fill app name, email<br/>
-5. Click "Credentials" → "+ Create Credentials" → "OAuth Client ID"<br/>
-6. Choose "Web Application"<br/>
-7. Add redirect URI: http://localhost:8000/auth/google/callback<br/>
-8. Copy Client ID and Secret → Paste in .env<br/>
+
+1. Go to Google Cloud Console(https://console.cloud.google.com/) (Login by your google Account.)<br/>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G1.png" alt="" width="800"/></td><br/>
+
+2. After This Page Open . Click APIs & Services<br/>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G2.png" alt="" width="800"/></td><br/>
+
+3. Left Side Click OAuth consent screen<br/>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G3.png" alt="" width="800"/></td><br/>
+
+4. Then Again Left Side Click Clients After " + Create client " click <br/>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G4.png" alt="" width="800"/></td><br/>
+
+5. Choose Application Type(Web application) , Write Name of Your Auth<br/>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G5.png" alt="" width="800"/></td><br/>
+
+6. Authorized JavaScript origins : Click Add URI and Write "http://localhost:8000<br/>Authorized redirect URI : Click Add URI and write http://localhost:8000/oauth/google/callback Then Create.<br/>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G6.png" alt="" width="800"/></td><br/>
+
+7. Copy Client-ID, copy Client-Secret Paste in .env file.<br/>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/G7.png" alt="" width="800"/></td><br/>
 
 Done. Told you it's fast.
 
 </details>
 
 <details> <summary><strong>📹 Click here for GitHub OAuth setup (20 seconds)</strong></summary>
-1. Go to GitHub → Settings → Developer Settings → OAuth Apps<br/>
+
+1. Go to GitHub → (Profile Top-Right click)Settings → Developer Settings → OAuth Apps<br/>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH1.png" alt="" width="800"/></td>
+
 2. Click "New OAuth App"<br/>
-3. App Name: "Auth Service"<br/>
-4. Homepage: http://localhost:8000<br/>
-5. Callback: http://localhost:8000/auth/github/callback<br/>
-6. Click "Generate Client Secret"<br/>
-7. Copy ID and Secret → Paste in .env<br/>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH2.png" alt="" width="800"/></td>
+
+3. App Name: "Enter Your App Name"<br/>Homepage: http://localhost:8000<br/>Homepage: http://localhost:8000<br/>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH3.png" alt="" width="800"/></td>
+
+4. Copy Client-ID → Paste in .env <br/>Click "Generate Client Secret"
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH4.png" alt="" width="800"/></td>
+
+6. verify via email
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH5.png" alt="" width="800"/></td>
+
+7. Copy Client Secret → Paste in .env<br/>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH6.png" alt="" width="800"/></td>
 
 That's it. GitHub is literally 4 clicks.
 <br/>
@@ -190,14 +214,20 @@ That's it. GitHub is literally 4 clicks.
 
 ## Step 3: Install & Run
 ```
+First install
+\Auth-Service> (You in Auth-Serive)
+npm install
+npm run dev
+- After
+(You in Backend Folder)
 npm install
 npm start / npm run dev
 ```
 
 See that? Your terminal should say:
 ```
-✅ MongoDB Connected
-🚀 Server Running on port 8000
+Connect Database.
+Server Running on 8000
 ```
 
 <br/>
@@ -311,7 +341,7 @@ Q: How do I add Facebook Login?
 A: Check config/passport.js - add FacebookStrategy (I'll add it soon)
 
 Q: I'm stuck. Help?
-A: Open an issue on GitHub. I respond within 24 hours.
+A: Open an issue on GitHub. I respond within 24 hours Or mail (whonames873@gmail.com).
 ```
 
 <div align="center"> <br/> <hr/> <br/> <p> <strong>Built with ☕ and 💻 by a developer who got tired of rewriting auth</strong> </p> <p> <a href="#readme-top">⬆️ Back to Top</a> </p> <br/> <img src="https://via.placeholder.com/400x100/1a1a1a/00ff00?text=Happy+Coding!" alt="Happy Coding"/> </div> 
