@@ -169,7 +169,7 @@ export default function Dashboard() {
                     <h3 className="text-white font-medium mb-2">Clone the Repository</h3>
                     <div className="relative group">
                       <pre className="bg-gray-900 p-4 rounded-lg text-sm font-mono text-green-400 overflow-x-auto">
-                        git clone https://github.com/yourusername/auth-service.git
+                        git clone https://github.com/Prit059/auth-service.git
                       </pre>
                       <button 
                         onClick={() => copyToClipboard('git clone https://github.com/yourusername/auth-service.git')}
@@ -190,6 +190,8 @@ export default function Dashboard() {
                     <h3 className="text-white font-medium mb-2">Install Dependencies</h3>
                     <div className="relative group">
                       <pre className="bg-gray-900 p-4 rounded-lg text-sm font-mono text-green-400">
+                        cd frontend && npm install
+                        <br />
                         cd backend && npm install
                       </pre>
                       <button 
@@ -224,16 +226,36 @@ export default function Dashboard() {
                   </div>
                 </div>
 
-                {/* Step 4 */}
                 <div className="flex items-start space-x-4">
                   <div className="w-6 h-6 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-blue-400 text-sm font-bold">4</span>
                   </div>
                   <div className="flex-1">
+                    <h3 className="text-white font-medium mb-2">Start Frontend</h3>
+                    <div className="relative group">
+                      <pre className="bg-gray-900 p-4 rounded-lg text-sm font-mono text-green-400">
+                        npm run dev
+                      </pre>
+                      <button 
+                        onClick={() => copyToClipboard('npm start')}
+                        className="absolute top-2 right-2 px-3 py-1 bg-gray-800 hover:bg-gray-700 rounded text-xs text-gray-400 transition-colors"
+                      >
+                        Copy
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Step 4 */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-blue-400 text-sm font-bold">5</span>
+                  </div>
+                  <div className="flex-1">
                     <h3 className="text-white font-medium mb-2">Start Server</h3>
                     <div className="relative group">
                       <pre className="bg-gray-900 p-4 rounded-lg text-sm font-mono text-green-400">
-                        npm start
+                        npm run dev
                       </pre>
                       <button 
                         onClick={() => copyToClipboard('npm start')}

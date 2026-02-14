@@ -289,11 +289,11 @@ node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ## Step 3: Install & Run
 ```
 First install
-\Auth-Service> (You in Auth-Serive)
+- cd frontend (You in frontend)
 npm install
 npm run dev
 - After
-(You in Backend Folder)
+- cd backend (You in Backend)
 npm install
 npm start / npm run dev
 ```
