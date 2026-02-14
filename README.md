@@ -189,7 +189,7 @@ Done. Told you it's fast.
 <details> <summary><strong>📹 Click here for GitHub OAuth setup (20 seconds)</strong></summary>
 
 1. Go to GitHub → (Profile Top-Right click)Settings → Developer Settings → OAuth Apps<br/>
-<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH1.png" alt="" width="800"/></td>
+<td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH1.png" alt="" width="400"/></td>
 
 2. Click "New OAuth App"<br/>
 <td><img src="https://raw.githubusercontent.com/Prit059/Auth-Service/refs/heads/main/public/images/GH2.png" alt="" width="800"/></td>
